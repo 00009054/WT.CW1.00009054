@@ -1,0 +1,355 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/FuturaPT-Bold.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Futura PT", "Arial", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 26px;
+  color: #949494;
+  background-color:#F9F8F8; 
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1390px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button */
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 27px;
+  border: none;
+  background: none;
+  background-color: #333333;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Section Heading */
+
+.section-heading{
+  margin: 0;
+  margin-bottom: 80px;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #333333;
+  text-align: center;
+}
+
+/* Inner Heading */
+
+.inner-heading{
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 56%;
+  color: #333333;
+}
+
+/* Site Header */
+
+.site-header-top{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #F9F8F8;
+}
+
+.site-header-top-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  padding-left: 178px;
+}
+
+.clinic-address{
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  margin-right: 8px;
+}
+
+.clinic-address::before{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-image: url(../img/home.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  content: "";
+}
+
+.phone-numbers{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.phone-numbers::before{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-image: url(../img/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.phone-link{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.phone-link:hover{
+  color: #920000;
+}
+
+.phone-link:active{
+  color: #333333;
+  opacity: 0.5;
+}
+
+.dot{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 9px;
+  background-color: #920000;
+}
+
+.working-hours{
+  display: flex;
+  align-items: center;
+}
+
+.working-hours::before{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-image: url(../img/schedule.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.working-hours span{
+  display: inline-block;
+}
+
+.working-hours span:not(:last-child){
+  margin-right: 17px;
+}
+
+/* Site Navigation */
+
+.site-nav{
+  background-color: #FFFFFF;
+  border: 1px solid #F3F3F3;
+}
+
+.site-nav-content{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-link-wrapper{
+  display: flex;
+  align-items: center;
+  width: 178px;
+}
+
+.logo-link{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  transform: translateY(-50%);
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover{
+  opacity: 0.8;
+}
+
+.logo-link:active{
+  opacity: 0.5;
+}
+
+.logo{
+  width: 180px;
+  height: 180px;
+  display: block;
+}
+
+/* nav menu */
+
+.nav-menu{
+  display: flex;
+  justify-content: center;
+  max-width: calc(100% - 388px);
+  padding: 0;
+  margin: 0 15px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.nav-item{
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: 19px 27px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+  transition: background-color 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.nav-link:hover{
+  color: #fff;
+  background-color: #920000;
+}
+
+.nav-link:active{
+  opacity: 0.5;
+}
+
+.nav-link-active::before{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+  background-image: url(../img/active.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.nav-link-active:hover,
+.nav-link-active:active{
+  color: #333;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.btn-ask-question{
+  align-self: center;
+  display: flex;
+  max-height: 61px;
+  align-items: center;
+  color: #333333;
+  background-color: transparent;
+  transition: background-color 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.btn-ask-question::before{
+  display: inline-block;
+  width: 23px;
+  height: 21px;
+  margin-right: 5px;
+  background-image: url(../img/pet.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.btn-ask-question:hover{
+  color: #fff;
+  background-color: #920000;
+}
+
+.btn-ask-question:active{
+  opacity: 0.5;
+}
