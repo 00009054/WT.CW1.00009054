@@ -107,7 +107,7 @@ img{
   color: #333333;
 }
 
-/* Site Header */
+/* --------------------Site Header----------------- */
 
 .site-header-top{
   font-weight: 500;
@@ -134,36 +134,12 @@ img{
   margin-right: 8px;
 }
 
-.clinic-address::before{
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 9px;
-  background-image: url(../img/home.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  content: "";
-}
-
 .phone-numbers{
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   margin-right: 20px;
   margin-left: 20px;
-}
-
-.phone-numbers::before{
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 9px;
-  background-image: url(../img/phone.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  content: "";
 }
 
 .phone-link{
@@ -199,18 +175,6 @@ img{
 .working-hours{
   display: flex;
   align-items: center;
-}
-
-.working-hours::before{
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-right: 9px;
-  background-image: url(../img/schedule.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  content: "";
 }
 
 .working-hours span{
@@ -303,46 +267,15 @@ img{
   opacity: 0.5;
 }
 
-.nav-link-active::before{
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 12px;
-  background-image: url(../img/active.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  content: "";
-}
-
-.nav-link-active:hover,
-.nav-link-active:active{
-  color: #333;
-  background-color: transparent;
-  opacity: 1;
-}
-
 .btn-ask-question{
   align-self: center;
   display: flex;
-  max-height: 61px;
+  max-height: 60px;
   align-items: center;
   color: #333333;
   background-color: transparent;
   transition: background-color 0.3s ease,
   opacity 0.3s ease;
-}
-
-.btn-ask-question::before{
-  display: inline-block;
-  width: 23px;
-  height: 21px;
-  margin-right: 5px;
-  background-image: url(../img/pet.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  content: "";
 }
 
 .btn-ask-question:hover{
@@ -352,4 +285,157 @@ img{
 
 .btn-ask-question:active{
   opacity: 0.5;
+}
+
+.nav-link-active{
+  color: #920000;
+}
+
+.nav-link-active:hover,
+.nav-link-active:active{
+  background-color: transparent;
+  opacity: 1;
+}
+
+/* ------------------Site Footer------------------ */
+
+.site-footer{
+  margin-top: 120px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: #F3F3F3;
+}
+
+.site-footer-content{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer-nav-menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 300px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-nav-item{
+  min-width: 150px;
+  margin-bottom: 14px;
+}
+
+.footer-nav-link{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+}
+
+.footer-nav-link:hover{
+  color: #920000;
+  background-color: transparent;
+}
+
+.footer-nav-link:active{
+  opacity: 0.5;
+}
+
+.footer-nav-header{
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #920000;
+}
+
+.footer-middle{
+  margin: 0 30px;
+}
+
+.footer-working-hours{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.footer-clinic-address{
+  position: relative;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: #333333;
+}
+
+.footer-phone-numbers{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: start;
+}
+
+.footer-phone-numbers a{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease,
+  opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.footer-phone-numbers a:not(:last-child){
+  margin-bottom: 4px;
+}
+
+.footer-phone-numbers a:hover{
+  color: #920000;
+}
+
+.footer-phone-numbers a:active{
+  color: #333333;
+  opacity: 0.5;
+}
+
+.footer-socials{
+  display: flex;
+  padding: 0;
+  margin: 0 -8px;
+  list-style-type: none;
+}
+
+.footer-socials-item{
+  padding: 0 8px;
+}
+
+.footer-link-active{
+  color: #920000;
+}
+
+.footer-link-active:hover,
+.footer-link-active:active{
+  background-color: transparent;
+  opacity: 1;
+}
+
+.footer-rights{
+  margin: 0;
+  margin-top: 12px;
+  font-size: 14px;
+  text-align: right;
 }
