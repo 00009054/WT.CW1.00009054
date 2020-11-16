@@ -297,6 +297,67 @@ img{
   opacity: 1;
 }
 
+/* Promo Section */
+
+.promo-section{
+  padding: 100px 0;
+}
+
+.promo-section-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-img{
+  width: 576px;
+  object-fit: cover;
+}
+
+.promo-info{
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.page-heading{
+  margin: 0;
+  margin-bottom: 29px;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.page-heading span{
+  color: #920000;
+  display: inline-block;
+}
+
+.page-info{
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+}
+
+.btn-our-services{
+  min-width: 180px;
+  max-width: 180px;
+  padding: 15px;
+  border-radius: 3px;
+  transition: background-color 0.3s ease,
+  opacity 0.3s ease,
+  color 0.3s ease;
+}
+
+.btn-our-services:hover{
+  background-color: #920000;
+}
+
+.btn-our-services:active{
+  opacity: 0.5;
+}
+
+
 /* ------------------Site Footer------------------ */
 
 .site-footer{
