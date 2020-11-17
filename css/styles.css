@@ -91,9 +91,9 @@ img{
 .section-heading{
   margin: 0;
   margin-bottom: 80px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.2;
-  color: #333333;
+  color: #920000;
   text-align: center;
 }
 
@@ -300,7 +300,9 @@ img{
 /* Promo Section */
 
 .promo-section{
-  padding: 100px 0;
+  
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .promo-section-content{
@@ -357,6 +359,75 @@ img{
   opacity: 0.5;
 }
 
+/* Comments Section */
+
+.comments-section{
+  padding: 50px 0;
+}
+
+.comments-section-content{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.comments-section-content h2{
+  max-width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.comments-section-heading{
+  font-size: 20px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.comments-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.comment-wrapper{
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.comment-avatar{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  border: 1px solid #920000;
+}
+
+.comment{
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #949494;
+}
+
+.comment-author{
+  margin: 0;
+  font-weight: 500;
+  color: #920000;
+  text-align: center;
+}
 
 /* ------------------Site Footer------------------ */
 
