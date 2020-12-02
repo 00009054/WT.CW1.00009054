@@ -881,3 +881,126 @@ img{
 .service:hover .service__text{
   color: #920000;
 }
+
+/* ==================== CONTACTS ===================== */
+.contacts-hero {
+  margin-top: 50px;
+  padding: 50px 0;
+  background-image: url("../img/contacts-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(75% + 120px) center;
+  background-size: contain;
+}
+
+.contacts-hero-info{
+  max-width: 450px;
+  margin-left: 140px;
+  margin-bottom: 30px;
+}
+
+.contacts__address {
+  display: flex;
+  margin-left: 100px;
+}
+
+.contacts__company-adress {
+  width: 153px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+  align-items: flex-start;
+}
+
+.contacts__company-adress::before, 
+.contacts__worktime::before, 
+.contacts__telnumbers::before {
+  height: 96px;
+  width: 96px;
+  display: inline-block;
+  margin-bottom: 30px;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+.contacts__company-adress::before {
+  background-image: url("../img/location.png");
+}
+
+.contacts__worktime {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.contacts_worktime-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333333;
+  margin: 0;
+}
+
+.contacts_worktime-text + .contacts_worktime-text {
+  margin-top: 8px;
+}
+
+.contacts_worktime-text span {
+  font-weight: 500;
+}
+
+.contacts__worktime::before {
+  background-image: url("../img/calendar.png");
+}
+
+.contacts__telnumbers {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts__telnumber-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: right;
+  text-decoration: none;
+  color: #333333;
+}
+
+.contacts__telnumbers::before {
+  background-image: url("../img/phone.png");
+}
+
+.contacts__telnumber-link:hover{
+  color: #920000;
+}
+
+.contacts__telnumber-link:active{
+  opacity: 0.6;
+}
+
+.contacts-location{
+  padding: 50px 0;
+}
+
+.contacts-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.company-img {
+  flex-shrink: 1;
+}
