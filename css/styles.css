@@ -1,3 +1,5 @@
+/* Fonts were taken from this source: https://blogfonts.com/futura-pt.font */
+
 @font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
@@ -568,26 +570,32 @@ img{
   content: "";
 }
 
+/* https://pixabay.com/photos/stethoscope-doctor-medical-1584223/ */
 .services-consultation::before{
   background-image: url(../img/consultation.jpg);
 }
 
+/* https://pixabay.com/photos/surgery-hospital-doctor-operation-3034133/ */
 .services-surgery::before{
   background-image: url(../img/surgery.jpg);
 }
 
+/* https://pixabay.com/photos/dentist-dental-care-dental-check-up-428645/ */
 .services-dentistry::before{
   background-image: url(../img/dentistry.jpg);
 }
 
+/* https://pixabay.com/photos/laboratory-analysis-chemistry-2815641/ */
 .services-labaratory::before{
   background-image: url(../img/labaratory.jpg);
 }
 
+/* https://pixabay.com/photos/acne-pimples-spots-zits-skin-5561750/ */
 .services-dermatology::before{
   background-image: url(../img/dermatalogy.jpg);
 }
 
+/* https://pixabay.com/photos/head-massage-treatment-relaxation-650878/ */
 .services-spa::before{
   background-image: url(../img/spa.jpg);
 }
@@ -747,4 +755,129 @@ img{
   margin-top: 12px;
   font-size: 14px;
   text-align: right;
+}
+
+/* ================= SERVICES ======================= */
+
+.services-hero {
+  padding: 50px 0;
+  margin-top: 50px;
+  background-image: url("../img/service-bg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(30% + 455px) center;
+  background-size: contain;
+}
+
+.services-hero-info {
+  padding: 50px 0;
+  max-width: 450px;
+  margin-left: 120px;
+}
+
+.services-services{
+  padding: 50px 0;
+}
+
+.services__list {
+  max-width: 100%;
+  display: flex;
+  margin: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 400px;
+  flex-shrink: 0;
+  margin: 0 20px;
+  margin-bottom: 37px;
+  padding: 50px 22px  45px 50px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  transition: filter ease 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.service:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+}
+
+/* https://pixabay.com/photos/stethoscope-doctor-medical-1584223/ */
+.service::before {
+  width: 180px;
+  height: 100px;
+  content: '';
+  display: inline-block;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../img/consultation.jpg");
+}
+
+/* https://pixabay.com/photos/surgery-hospital-doctor-operation-3034133/ */
+.service:nth-child(2):before {
+  background-image: url("../img/surgery.jpg");
+}
+
+/* https://pixabay.com/photos/dentist-dental-care-dental-check-up-428645/ */
+.service:nth-child(3):before {
+  background-image: url("../img/dentistry.jpg");
+}
+
+/* https://pixabay.com/photos/laboratory-analysis-chemistry-2815641/ */
+.service:nth-child(4):before {
+  background-image: url("../img/labaratory.jpg");
+}
+
+/* https://pixabay.com/photos/acne-pimples-spots-zits-skin-5561750/ */
+.service:nth-child(5):before {
+  background-image: url("../img/dermatalogy.jpg");
+}
+
+/* https://pixabay.com/photos/head-massage-treatment-relaxation-650878/ */
+.service:nth-child(6):before {
+  background-image: url("../img/spa.jpg");
+}
+
+/* https://pixabay.com/photos/investigation-stethoscope-to-listen-2458540/ */
+.service:nth-child(7):before {
+  background-image: url("../img/pediatrics.jpg");
+}
+
+/* https://pixabay.com/photos/psychology-psyche-mask-wire-rack-2706902/ */
+.service:nth-child(8):before {
+  background-image: url("../img/psychology.jpg");
+}
+
+.service__name {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.2;
+  width: 100%;
+  color: #333333;
+  white-space: pre-wrap;
+  margin-top: 0;
+  margin-bottom: 14px;
+  word-break: break-word;
+}
+
+.service__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-top: 0;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.service:hover .service__text{
+  color: #920000;
 }
