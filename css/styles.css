@@ -290,13 +290,8 @@ img{
 }
 
 .nav-link-active{
-  color: #920000;
-}
-
-.nav-link-active:hover,
-.nav-link-active:active{
-  background-color: transparent;
-  opacity: 1;
+  background-color: #920000;
+  color: #fff;
 }
 
 /* Promo Section */
