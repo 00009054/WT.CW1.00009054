@@ -1085,3 +1085,90 @@ img{
   color: #333;
   max-width: 580px;
 }
+
+/* ==============Ask Question================== */
+
+.registration__section {
+  page-break-after: 50px 0;
+  background-image: url("../img/medicine.svg");
+  background-repeat: no-repeat;
+  background-color: #c96464;
+  background-size: auto 80%;
+  background-position: calc(60% + 200px) center;
+}
+
+.registration__section .container {
+  padding: 50px 100px;
+}
+
+.registration__heading {
+  max-width: 450px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.registration__text {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.registration__form {
+  max-width: 400px;
+  margin-right: auto;
+}
+
+.registration__input {
+  width: 100%;
+  padding: 10px 25px;
+  margin-bottom: 30px;
+  background: #FFFFFF;
+  border: 2px solid transparent;
+  outline: 0;
+  border-radius: 5px;
+}
+
+.registration__textarea {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 15px 25px;
+  max-height: 165px;
+  min-height: 165px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.2;
+  outline: 0;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: #112149;
+}
+
+.registration__textarea:focus {
+  border-color: #00B031;
+}
+
+.registration__input:not(:placeholder-shown):invalid {
+  border-color: #D81D04;
+}
+
+.registration__input:valid {
+  border-color: #00B031;
+}
+
+.registration__input::placeholder {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #112149;
+}
+
+.registration__button{
+  background-color: #112149;
+}
+
+.registration__button:hover{
+  color:  #112149;
+  background-color: #fff;
+}
