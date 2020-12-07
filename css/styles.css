@@ -192,6 +192,7 @@ img{
 .site-nav{
   background-color: #FFFFFF;
   border: 1px solid #F3F3F3;
+  border-bottom: none;
 }
 
 .site-nav-content{
@@ -360,7 +361,7 @@ img{
 
 .feature-section {
   padding: 50px 0;
-  background-color: #BDEAFF;
+  background-color: #eee;
 }
 
 .feature-section__container {
@@ -860,6 +861,7 @@ img{
   margin-top: 0;
   margin-bottom: 14px;
   word-break: break-word;
+  color: #112149;
 }
 
 .service__text {
@@ -884,7 +886,7 @@ img{
   background-image: url("../img/contacts-bg.svg");
   background-repeat: no-repeat;
   background-position: calc(75% + 120px) center;
-  background-size: contain;
+  background-size: auto 80%;
 }
 
 .contacts-hero-info{
@@ -1062,6 +1064,7 @@ img{
   font-size: 14px;
   line-height: 22px;
   margin-right: 28px;
+  color: #112149;
 }
 
 .tip__heading {
@@ -1070,6 +1073,7 @@ img{
   font-size: 20px;
   line-height: 1.2;
   margin-top: 10px;
+  color: #920000;
 }
 
 .tip__text {
@@ -1166,4 +1170,157 @@ img{
 .registration__button:hover{
   color:  #112149;
   background-color: #fff;
+}
+
+/* ====================ABOUT US===================== */
+
+.about-hero{
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-hero-text{
+  font-size: 32px;
+  line-height: 1.2;
+  color: #112149;
+}
+
+.about-section{
+  padding: 50px 0;
+  background: #eee;
+}
+
+.about-list{
+  display: flex;
+  max-width: 900px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  color:  #112149;
+}
+
+.about-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.about-img{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.about-numbers{
+  font-size: 40px;
+  color: #920000;
+  margin-bottom: 20px;
+}
+
+.price-list{
+  padding: 50px 0;
+}
+
+.price-list-text{
+  color: #112149;
+  font-size: 28px;
+}
+
+.consultation {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.consultation td, .consultation th {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  color: #112149;
+}
+
+.consultation tr:nth-child(even){
+  background-color: #eee;
+}
+
+.consultation th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #920000;
+  color: white;
+}
+
+/* ==============review=========== */
+
+.about-review{
+  padding: 50px 0;
+}
+
+.about-review-info{
+  width: 100%;;
+}
+
+.new-review{
+  display: flex;
+  background-color: #eeeeee;
+  border-radius: 5px;
+}
+.new-review input{
+  display: block;
+  flex-grow: 1;
+  background-color: #eee;
+  border: none;
+  padding: 20px;
+  margin-right: 15px;
+}
+
+.new-review button{
+  border: none;
+  padding: 0 15px;
+  color: #920000;
+}
+.new-review input:focus, .new-review button:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.review{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.review li{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #112149;
+  text-transform: capitalize;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 13px 30px -10px rgba(130,131,143,1);
+}
+
+#reviewList button{
+  display: block;
+  min-width: 30px;
+  max-width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url('../img/minus.svg');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+#reviewList button:focus{
+  outline: none;
+  box-shadow: none;
 }
