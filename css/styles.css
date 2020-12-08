@@ -1339,6 +1339,20 @@ img{
   box-shadow: none;
 }
 
+/* RESPONSIVE HEADER */
+
+.menu-btn{
+  display: none;
+  padding: 15px 15px;
+  font-size: 14px;
+  line-height: 1.2;
+  order: -1;
+  margin-left: auto;
+}
+
+.menu-btn:focus{
+  outline: 0;
+}
 
 /* RESPONSIVE =============================================== */
 
@@ -1346,7 +1360,7 @@ img{
   .feature-section__container{
     flex-direction: column;
   }
-
+  
   .feature__left{
     max-width: 100%;
     display: flex;
@@ -1354,16 +1368,16 @@ img{
     align-items: center;
     margin-bottom: 35px;
   }
-
+  
   .feature__img{
     width: 650px;
   }
-
+  
   .feature-section__heading{
     padding-top: 30px;
     font-size: 36px;
   }
-
+  
   .feature-section__list{
     max-width: 800px;
     padding: 0 30px;
@@ -1371,10 +1385,31 @@ img{
     margin-right: auto;
     text-align: center;
   }
-
+  
   .comments-section-content h2{
     font-size: 36px;
     margin-bottom: 35px;
+  }
+  
+  .phone-numbers{
+    flex-direction: column;
+  }
+  
+  .dot{
+    display: none;
+  }
+  
+  .phone-link:not(:last-child){
+    margin-bottom: 5px;
+  }
+  
+  .working-hours{
+    flex-direction: column;
+  }
+  
+  .working-hours span:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -1407,42 +1442,72 @@ img{
   .tips__list{
     background-image: none;
   }
-
+  
   .company-img{
     max-width: 450px;
   }
-
+  
   .registration__section {
     background-size: auto 60%;
   }
-
+  
   .promo-img{
     width: 400px;
   }
-
+  
   .contacts-hero{
     background-image: none;
   }
-
+  
   .contacts-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
+  
   .contacts__address{
     margin-left: 0;
   }
-
+  
   .contacts-hero-info{
     margin-left: 0;
   }
-
+  
   .comments-list{
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .site-nav-content{
+    position: static;
+  }
+  
+  .site-header{
+    position: relative;
+  }
+  
+  .logo-link{
+    top: 0;
+    left: 20px;
+    transform: translateY(0);
+  }
+  
+  .logo{
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logo-link-wrapper{
+    width: 0;
+  }
+  
+  .nav-menu{
+    flex-grow: 1;
+    max-width: calc(100% - 150px);
+    justify-content: space-between;
+    margin-left: 0;
   }
 }
 
@@ -1461,60 +1526,64 @@ img{
   .faq-container{
     padding-left: 50px;
   }
-
+  
   .contacts-hero{
     margin-top: 0;
   }
-
+  
   .contacts-location h2{
     font-size: 36px;
     margin-bottom: 30px;
   }
-
+  
   .registration__section {
     background-size: auto 50%;
   }
-
+  
   .registration__heading{
     max-width: 100%;
     font-size: 36px;
   }
-
+  
   .registration__section .container{
     padding: 50px 0;
     padding-left: 30px;
     padding-right: 50px;
   }
-
+  
   .about-hero-text{
     font-size: 24px;
   }
-
+  
   .about-hero-img{
     max-width: 500px;
     height: auto;
   }
-
+  
   .about-review{
     padding: 30px 0;
   }
-
+  
   .about-review h3{
     font-size: 36px;
     margin-bottom: 20px;
   }
-
+  
   .about-list{
     max-width: 600px;
   }
-
+  
   .about-item{
     margin: 0 45px;
     margin-bottom: 50px;
   }
-
+  
   .about-section{
     padding-bottom: 0;
+  }
+  
+  .site-header-top-content{
+    padding-left: 120px;
   }
 }
 
@@ -1522,13 +1591,13 @@ img{
   .promo-section{
     padding-top: 50px;
   }
-
+  
   .promo-section-content{
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
+  
   .promo-info{
     margin: 0;
     margin-bottom: 30px;
@@ -1537,13 +1606,25 @@ img{
     flex-direction: column;
     align-items: center;
   }
-
+  
   .promo-img{
     width: 600px;
   }
-
+  
   .services-list{
     max-width: 530px;
+  }
+  
+  .nav-link{
+    padding: 15px 15px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  .btn-ask-question{
+    padding: 15px 15px;
+    font-size: 14px;
+    line-height: 1.2;
   }
 }
 
@@ -1577,11 +1658,11 @@ img{
   .faq__hero-text{
     max-width: 350px;
   }
-
+  
   .registration__section{
     background-image: none;
   }
-
+  
   .registration__section .container{
     padding: 30px 20px;
     display: flex;
@@ -1589,7 +1670,7 @@ img{
     align-items: center;
     text-align: center;
   }
-
+  
   .registration__form{
     display: flex;
     flex-direction: column;
@@ -1597,33 +1678,33 @@ img{
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .about-hero{
     padding: 30px 0;
   }
-
+  
   .about-hero h2{
     font-size: 40px;
   }
-
+  
   .about-hero-text{
     font-size: 18px;
   }
-
+  
   .about-hero-img{
     max-width: 400px;
     height: auto;
   }
-
+  
   .price-list{
     padding: 30px 0;
   }
-
+  
   .comments-list{
     flex-direction: column;
     align-items: center;
   }
-
+  
   .comment-wrapper{
     max-width: 500px;
   }
@@ -1668,60 +1749,104 @@ img{
     flex-direction: column;
     align-items: center;
   }
-
+  
   .tips__item{
     padding: 30px 20px;
     margin-bottom: 30px;
   }
-
+  
   .company-img{
     max-width: 320px;
     height: auto;
   }
-
+  
   .contacts__company-adress{
     margin-right: 50px;
   }
-
+  
   .contacts__worktime{
     margin-right: 50px;
   }
-
+  
   .promo-img{
     width: 400px;
   }
-
+  
   .promo-info{
     margin-left: 30px;
     margin-right: 30px;
   }
-
+  
   .promo-section{
     padding: 30px 0;
   }
-
+  
   .services-section{
     padding: 30px 0;
   }
-
+  
   .comments-section{
     padding: 30px 0;
   }
-
+  
   .services-section-heading{
     margin-bottom: 40px;
   }
-
+  
   .comments-section-content h2{
     font-size: 28px;
   }
-
+  
   .feature__name{
     font-size: 24px;
   }
-
+  
   .feature-section__heading{
     font-size: 28px;
+  }
+  
+  .phone-link:last-child{
+    display: none;
+  }
+  
+  .logo{
+    width: 65px;
+    height: 65px;
+    transform: translateY(83%);
+  }
+  
+  .site-header-top-content{
+    padding-left: 0;
+  }
+  
+  .nav-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2D314D), to(rgba(45, 49, 77, 0.0001)));
+    background-image: linear-gradient(180deg, #2D314D 0%, rgba(45, 49, 77, 0.0001) 100%);
+  }
+
+  .nav-link{
+    color: #F3F3F3;
+  }
+
+  .site-header--open .nav-menu {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .site-header--open .menu-btn{
+    background-color: #920000;
   }
 }
 
@@ -1743,25 +1868,25 @@ img{
   .services-services{
     padding: 30px 0;
   }
-
+  
   .faq__heading{
     font-size: 48px;
   }
-
+  
   .tip__heading{
     font-size: 18px;
     margin-bottom: 0;
   }
-
+  
   .tip__text{
     margin-top: 12px;
   }
-
+  
   .contacts__address{
     flex-direction: column;
     align-items: center;
   }
-
+  
   .contacts__company-adress{
     display: flex;
     flex-direction: row;
@@ -1771,7 +1896,7 @@ img{
     margin-right: 0;
     margin-bottom: 30px;
   }
-
+  
   .contacts__worktime{
     display: flex;
     flex-direction: row;
@@ -1781,43 +1906,59 @@ img{
     margin-right: 0;
     margin-bottom: 30px;
   }
-
+  
   .contacts__contact{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 300px;
   }
-
+  
   .contacts-hero{
     padding: 30px 0;
   }
-
+  
   .contacts-location{
     padding: 30px 0;
   }
-
+  
   .contacts__worktime::before,
   .contacts__address::before,
   .contacts__contact::before{
     margin-bottom: 0;
   }
-
+  
   .about-hero h2{
     font-size: 46px;
   }
-
+  
   .about-hero-text{
     font-size: 16px;
   }
-
+  
   .about-hero-img{
     max-width: 300px;
   }
-
+  
   .about-item{
     margin: 0 20px;
     margin-bottom: 50px;
+  }
+
+  .working-hours{
+    display: none;
+  }
+
+  .phone-numbers{
+    margin-right: 0;
+  }
+
+  .phone-link{
+    font-size: 12px;
+  }
+
+  .clinic-address{
+    font-size: 12px;
   }
 }
 
@@ -1825,86 +1966,86 @@ img{
   .service{
     width: 320px;
   }
-
+  
   .registration__heading{
     font-size: 32px;
   }
-
+  
   .registration__textarea{
     font-size: 14px;
     padding: 8px 15px;
   }
-
+  
   .registration__input{
     padding: 8px 15px;
   }
-
+  
   .registration__input::placeholder{
     font-size: 14px;
   }
-
+  
   .about-list{
     flex-direction: column;
     align-items: center;
   }
-
+  
   .about-numbers{
     font-size: 48px;
   }
-
+  
   .about-feature{
     font-size: 28px;
   }
-
+  
   .about-item{
     width: 250px;
   }
-
+  
   .consultation{
     font-size: 14px;
   }
-
+  
   .price-list-text{
     font-size: 22px;
     margin-top: 0;
   }
-
+  
   .about-review h3{
     font-size: 30px;
   }
-
+  
   .about-hero h2{
     font-size: 38px;
   }
-
+  
   .about-hero-text{
     font-size: 14px;
   }
-
+  
   .page-heading{
     font-size: 36px;
   }
-
+  
   .page-info{
     font-size: 14px;
     margin-bottom: 20px;
   }
-
+  
   .comment-wrapper{
     margin-right: 20px;
     margin-left: 20px;
   }
-
+  
   .services-item {
     min-width: 350px;
     width: 400px;
     max-width: 450px;
   }
-
+  
   .services-link span{
     font-size: 24px;
   }
-
+  
   .services-link::before{
     min-width: 350px;
     width: 350px;
