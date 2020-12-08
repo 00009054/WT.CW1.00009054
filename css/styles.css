@@ -1780,10 +1780,15 @@ img{
     padding: 30px 20px;
     margin-bottom: 30px;
   }
+
+  .contacts-map{
+    flex-direction: column;
+  }
   
   .company-img{
-    max-width: 320px;
-    height: auto;
+    max-width: auto;
+    height: 400px;
+    margin-top: 30px;
   }
   
   .contacts__company-adress{
