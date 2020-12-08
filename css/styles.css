@@ -886,7 +886,7 @@ img{
   background-image: url("../img/contacts-bg.svg");
   background-repeat: no-repeat;
   background-position: calc(75% + 120px) center;
-  background-size: auto 80%;
+  background-size: auto 50%;
 }
 
 .contacts-hero-info{
@@ -906,18 +906,16 @@ img{
   font-style: normal;
   font-size: 16px;
   line-height: 1.2;
-  display: inline-flex;
-  align-items: center;
   color: #333333;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-right: 100px;
-  align-items: flex-start;
 }
 
 .contacts__company-adress::before, 
 .contacts__worktime::before, 
-.contacts__telnumbers::before {
+.contacts__contact::before {
   height: 96px;
   width: 96px;
   display: inline-block;
@@ -935,6 +933,7 @@ img{
 .contacts__worktime {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-right: 100px;
 }
 
@@ -959,10 +958,18 @@ img{
   background-image: url("../img/calendar.png");
 }
 
+.contacts__contact{
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__telnumbers {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts__telnumber-link {
@@ -975,7 +982,7 @@ img{
   color: #333333;
 }
 
-.contacts__telnumbers::before {
+.contacts__contact::before {
   background-image: url("../img/phone.png");
 }
 
@@ -993,7 +1000,6 @@ img{
 
 .contacts-map {
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow: hidden;
 }
@@ -1009,7 +1015,7 @@ img{
   background-image:  url("../img/faq-bg.svg");
   background-repeat: no-repeat;
   background-size: 500px auto;
-  background-position: calc(50% + 200px) 0px;
+  background-position: calc(50% + 250px) 0px;
 }
 
 .faq-container {
@@ -1068,7 +1074,6 @@ img{
 }
 
 .tip__heading {
-  width: 540px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -1088,7 +1093,6 @@ img{
 /* ==============Ask Question================== */
 
 .registration__section {
-  page-break-after: 50px 0;
   background-image: url("../img/medicine.svg");
   background-repeat: no-repeat;
   background-color: #c96464;
@@ -1204,10 +1208,12 @@ img{
 }
 
 .about-item{
+  width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 20px;
+  text-align: center;
 }
 
 .about-img{
@@ -1323,4 +1329,428 @@ img{
 #reviewList button:focus{
   outline: none;
   box-shadow: none;
+}
+
+
+/* RESPONSIVE =============================================== */
+
+@media only screen and (max-width:1200px){
+  .contacts-hero{
+    background-image: none;
+  }
+
+  .contacts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contacts__address{
+    margin-left: 0;
+  }
+
+  .contacts-hero-info{
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .page-heading{
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .services-hero{
+    margin-top: 0;
+    background-position: calc(30% + 390px) center;
+    background-size: auto 70%;
+  }
+  
+  .services-hero-info {
+    margin-left: 60px;
+  }
+  
+  .faq-main{
+    margin: 0;
+    background-size: 40% auto;
+    background-position: calc(50% + 250px) 100px;
+  }
+  
+  .faq-container{
+    padding-top: 60px;
+  }
+  
+  .tips__list{
+    background-image: none;
+  }
+
+  .company-img{
+    max-width: 450px;
+  }
+
+  .registration__section {
+    background-size: auto 60%;
+  }
+}
+
+@media only screen and (max-width:920px){
+  .services__list{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .service{
+    width: 650px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .faq-container{
+    padding-left: 50px;
+  }
+
+  .contacts-hero{
+    margin-top: 0;
+  }
+
+  .contacts-location h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .registration__section {
+    background-size: auto 50%;
+  }
+
+  .registration__heading{
+    max-width: 100%;
+    font-size: 36px;
+  }
+
+  .registration__section .container{
+    padding: 50px 0;
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+
+  .about-hero-text{
+    font-size: 24px;
+  }
+
+  .about-hero-img{
+    max-width: 500px;
+    height: auto;
+  }
+
+  .about-review{
+    padding: 30px 0;
+  }
+
+  .about-review h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about-list{
+    max-width: 600px;
+  }
+
+  .about-item{
+    margin: 0 45px;
+    margin-bottom: 50px;
+  }
+
+  .about-section{
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width:750px) {
+  .services-hero{
+    background-position: calc(30% + 250px) center;
+    background-size: auto 60%;
+  }
+  
+  .services-hero-info {
+    max-width: 320px;
+    margin-left: 40px;
+  }
+  
+  .service{
+    width: 550px;
+  }
+  
+  .faq-main {
+    background-position: calc(50% + 200px) 70px;
+  }
+  
+  .faq-container{
+    padding-bottom: 50px;
+  }
+  
+  .faq__heading{
+    font-size: 54px;
+  }
+  
+  .faq__hero-text{
+    max-width: 350px;
+  }
+
+  .registration__section{
+    background-image: none;
+  }
+
+  .registration__section .container{
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .registration__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-hero{
+    padding: 30px 0;
+  }
+
+  .about-hero h2{
+    font-size: 40px;
+  }
+
+  .about-hero-text{
+    font-size: 18px;
+  }
+
+  .about-hero-img{
+    max-width: 400px;
+    height: auto;
+  }
+
+  .price-list{
+    padding: 30px 0;
+  }
+}
+
+@media only screen and (max-width:650px){
+  .services-hero{
+    padding: 30px 0;
+    background-size: auto 60%;
+  }
+  
+  .page-heading{
+    font-size: 40px;
+  }
+  
+  .services-hero-info {
+    padding: 0;
+  }
+  
+  .service{
+    width: 450px;
+  }
+  
+  .faq-main{
+    background-image: none;
+  }
+  
+  .faq-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .faq__hero-text{
+    max-width: 70%;
+  }
+  
+  .tips__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tips__item{
+    padding: 30px 20px;
+    margin-bottom: 30px;
+  }
+
+  .company-img{
+    max-width: 320px;
+    height: auto;
+  }
+
+  .contacts__company-adress{
+    margin-right: 50px;
+  }
+
+  .contacts__worktime{
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width:550px){
+  .services-hero{
+    background-image: none;
+  }
+  
+  .services-hero-info {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .service-page-info{
+    margin-bottom: 0;
+  }
+  
+  .services-services{
+    padding: 30px 0;
+  }
+
+  .faq__heading{
+    font-size: 48px;
+  }
+
+  .tip__heading{
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .tip__text{
+    margin-top: 12px;
+  }
+
+  .contacts__address{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__company-adress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .contacts__worktime{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .contacts__contact{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .contacts-hero{
+    padding: 30px 0;
+  }
+
+  .contacts-location{
+    padding: 30px 0;
+  }
+
+  .contacts__worktime::before,
+  .contacts__address::before,
+  .contacts__contact::before{
+    margin-bottom: 0;
+  }
+
+  .about-hero h2{
+    font-size: 46px;
+  }
+
+  .about-hero-text{
+    font-size: 16px;
+  }
+
+  .about-hero-img{
+    max-width: 300px;
+  }
+
+  .about-item{
+    margin: 0 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .service{
+    width: 320px;
+  }
+
+  .registration__heading{
+    font-size: 32px;
+  }
+
+  .registration__textarea{
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .registration__input{
+    padding: 8px 15px;
+  }
+
+  .registration__input::placeholder{
+    font-size: 14px;
+  }
+
+  .about-list{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-numbers{
+    font-size: 48px;
+  }
+
+  .about-feature{
+    font-size: 28px;
+  }
+
+  .about-item{
+    width: 250px;
+  }
+
+  .consultation{
+    font-size: 14px;
+  }
+
+  .price-list-text{
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .about-review h3{
+    font-size: 30px;
+  }
+
+  .about-hero h2{
+    font-size: 38px;
+  }
+
+  .about-hero-text{
+    font-size: 14px;
+  }
 }
