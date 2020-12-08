@@ -633,14 +633,14 @@ img{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 300px;
+  max-width: 220px;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
 .footer-nav-item{
-  min-width: 150px;
+  min-width: 110px;
   margin-bottom: 14px;
 }
 
@@ -672,7 +672,8 @@ img{
 }
 
 .footer-middle{
-  margin: 0 30px;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .footer-working-hours{
@@ -1411,6 +1412,23 @@ img{
     margin-right: 0;
     margin-bottom: 5px;
   }
+
+  .footer-nav-menu{
+    max-width: 100px;
+    margin-right: 20px;
+  }
+
+  .footer-nav-item{
+    min-width: 100px;
+  }
+
+  .footer-working-hours{
+    margin-bottom: 30px;
+  }
+
+  .footer-phone-numbers{
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (max-width:1000px) {
@@ -1585,6 +1603,10 @@ img{
   .site-header-top-content{
     padding-left: 120px;
   }
+
+  .site-footer iframe{
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width:800px){
@@ -1707,6 +1729,10 @@ img{
   
   .comment-wrapper{
     max-width: 500px;
+  }
+
+  .site-footer iframe{
+    width: 200px;
   }
 }
 
@@ -1848,6 +1874,10 @@ img{
   .site-header--open .menu-btn{
     background-color: #920000;
   }
+
+  .footer-services{
+    display: none;
+  }
 }
 
 @media only screen and (max-width:550px){
@@ -1960,6 +1990,51 @@ img{
   .clinic-address{
     font-size: 12px;
   }
+
+  .site-footer{
+    padding: 30px 0;
+  }
+
+  .footer-nav-header{
+    display: none;
+  }
+
+  .footer-middle{
+    order: -1;
+    margin-left: 20px;
+    margin-right: 0;
+  }
+
+  .footer-right{
+    order: -2;
+    margin-right: 20px;
+  }
+
+  .site-footer-content{
+    flex-wrap: wrap;
+  }
+
+  .footer-quick-links{
+    order: -3;
+    min-width: 350px;
+    max-width: 500px;
+  }
+
+  .footer-nav-menu{
+    margin-bottom: 30px;
+    margin-right: 0;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .footer-nav-item{
+    min-width: 0;
+  }
+
+  .footer-nav-item:not(:last-child){
+    margin-right: 30px;
+  } 
 }
 
 @media only screen and (max-width:500px){
@@ -2052,5 +2127,23 @@ img{
     max-width: 400px;
     height: 250px;
     background-size: cover;
+  }
+
+  .footer-right{
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-middle{
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
